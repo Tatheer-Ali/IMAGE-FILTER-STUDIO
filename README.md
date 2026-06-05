@@ -1,2 +1,14 @@
 # IMAGE-FILTER-STUDIO
 Image Filter Studio is a C++ console application that loads JPG/PNG images, applies filter pipelines, previews results as ASCII art, and saves outputs. It demonstrates OOP through inheritance, polymorphism, abstraction, user management, file handling, and modular design for future growth and more.!!
+# DETAILS
+Image Filter Studio is a console based C++ application developed as a comprehensive Object Oriented Programming project. The system allows users to load real JPG and PNG images, apply multiple image processing filters, preview the results through ASCII art, and save the final output back to disk. The project was designed to demonstrate practical software engineering skills while implementing core OOP concepts in a real world application.
+
+The application supports two user roles: Admin and Customer. Customers can register, log in, load images, build custom filter pipelines, apply filters, save processed images, and view their session history. Administrators can manage customer accounts, monitor sessions, and control the availability of filters through a dedicated catalog management system.
+
+At the heart of the project is a dynamically allocated image grid composed of Pixel objects. Images are loaded using the stb_image library and exported using stb_image_write, enabling support for both JPG and PNG formats. An ASCII preview feature provides a text based representation of the image inside the terminal, allowing users to visualize changes during processing.
+
+The filter engine follows a pipeline architecture where multiple filters can be applied sequentially. Supported filters include Grayscale, Invert, Brightness Adjustment, Contrast Stretching, Red Channel Only, Green Channel Only, Blue Channel Only, Box Blur, Horizontal Flip, and Vertical Flip. Each filter is implemented as a separate class derived from a common abstract Filter base class, demonstrating inheritance, runtime polymorphism, and virtual functions.
+
+The project also showcases encapsulation, abstraction, operator overloading, friend classes, static member functions, deep copying, dynamic memory management, exception handling, method chaining, and file based persistence. User data, filter configurations, blocked accounts, and session records are stored in text files to maintain information across program executions.
+
+This project serves as a complete demonstration of Object Oriented Programming principles by combining image processing, file management, user authentication, and modular software design into a single interactive application. It highlights both technical implementation skills and the ability to build maintainable, extensible, and user focused software solutions. The modular architecture allows future integration of advanced filters, graphical interfaces, performance optimizations, and additional image formats for broader functionality and scalability.
